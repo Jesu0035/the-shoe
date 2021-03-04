@@ -29,6 +29,7 @@ async function start(){
     }
     
     function theClick(){
+        console.log(this);
         elementToPaint = this; 
         this.style.fill = "grey"; 
     }
@@ -45,10 +46,16 @@ async function start(){
     
     function colorClick(){
         console.log("KLIK", this.getAttribute("fill")); 
-        if(elementToPaint != undefined){
-            elementToPaint.style.fill = this.getAttribute("fill"); 
-        }
+    if(elementToPaint != undefined){
+        elementToPaint.style.fill = this.getAttribute("fill"); 
     }
+}
+
+       /*  document.querySelector('#frente_02').setAttribute('fill',this.getAttribute('fill'))
+        console.log("KLIK", this.getAttribute("fill"));  
+        
+         
+    }*/
 
    /*  document.querySelector('path').style.fill='red'; */
 

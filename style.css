@@ -31,3 +31,6 @@ path {
   font-size: 3rem;
   top: 150px;
 }
+image {
+  pointer-events: none;
+}
